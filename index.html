@@ -1,0 +1,75 @@
+To turn your app to Live Mode, you need to provide a Privacy Policy that specifically addresses how you handle "Platform Data" from Facebook. Since you are using GitHub to host it, you can create a simple webpage using GitHub Pages.
+
+Below is a custom Privacy Policy template for Doova AI, followed by instructions on how to set it up on GitHub.
+
+1. Privacy Policy for Doova AI
+Copy the text between the lines and save it as index.html or privacy.md in your GitHub repository.
+
+Privacy Policy for Doova AI
+Last Updated: January 3, 2026
+
+Doova AI ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and handle your information when you use our application to post Reels and images to Facebook via the Meta Graph API.
+
+1. Information We Collect
+When you authorize Doova AI via Facebook Login, we may access the following "Platform Data":
+
+Basic Profile Information: Name and Facebook ID (used to identify which Page you are posting to).
+
+Page Access Tokens: Temporary tokens used to authenticate and execute the "post" command on your behalf.
+
+Content Data: The images, videos (Reels), and captions you provide to our app for the purpose of publishing them to your Facebook Page.
+
+2. How We Use Your Information
+We use the data collected strictly for the following purposes:
+
+Content Publishing: To upload and publish Reels and images to your authorized Facebook Page(s) as requested by you.
+
+Authentication: To maintain a secure connection between Doova AI and the Facebook API.
+
+We do not:
+
+Create or manage user accounts within our system.
+
+Sell or share your data with any third-party advertisers or data brokers.
+
+Use your content for any purpose other than publishing it to your designated Facebook Page.
+
+3. Data Retention and Deletion
+Retention: We do not store your media (images/videos) after they have been successfully uploaded to Facebook. Page access tokens are stored only for the duration of your active session or as long as needed to fulfill scheduled posts.
+
+Data Deletion: You can revoke Doova AI’s access to your Facebook account at any time through your Facebook "Settings & Privacy" > "Apps and Websites" menu.
+
+Manual Request: If you wish to request the deletion of any metadata associated with your use of our app, please contact us at info@doova.ai. We will process your request within 30 days.
+
+4. Contact Us
+If you have any questions about this Privacy Policy, please contact: Email: info@doova.ai
+
+2. How to Host This on GitHub (For Free)
+To get a URL that Facebook will accept (e.g., https://yourname.github.io/doova-privacy/):
+
+Create a Repository: Go to GitHub and create a new public repository named doova-legal.
+
+Upload the File: Create a new file named index.html.
+
+Paste the Content: Paste the Privacy Policy text above into that file. (If using HTML, wrap the text in basic <html><body> tags for better formatting).
+
+Enable GitHub Pages:
+
+Go to Settings (in your repo) > Pages (on the left sidebar).
+
+Under Build and deployment, set the source to "Deploy from a branch" and select main (or master).
+
+Click Save.
+
+Get the URL: GitHub will give you a link at the top of that page. This is the Privacy Policy URL you paste into the Facebook Developer Dashboard.
+
+3. Required Permissions Checklist
+Since you are posting Reels and Images, make sure you have requested these permissions in your Facebook App Dashboard under App Review > Permissions and Features:
+
+pages_manage_posts (Required to post to a Page's feed)
+
+pages_read_engagement (Required to see the Page info)
+
+pages_show_list (Required to see which Pages the user manages)
+
+public_profile (Default)
